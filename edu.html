@@ -1,0 +1,173 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Educational Timeline | Rhitvik Sinha</title>
+    <meta name="description" content="Personal Web Page">
+    <meta name="author" content="Rhitvik Sinha">
+
+    <meta property="og:title" content="Educational Timeline | Rhitvik Sinha">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rhitviksinha.github.io/">
+    <meta property="og:description" content="Rhitvik Sinha's Personal Web Page.">
+    <meta property="og:image" content="./assets/img/rhitvik.JPG">
+
+    <link rel="icon" href="./assets/img/favicon1.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+    <link href="./assets/css/navbar.css" rel="stylesheet">
+    <link href="./assets/css/timeline.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('./assets/img/nyc-winter.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            background-color: rgba(0,0,0,0.75);
+            background-blend-mode: darken;
+        }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 30px;
+            border: 2px solid white;
+            outline: none;
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            cursor: pointer;
+            padding: 11px 21px 13px 19px;
+            border-radius: 50%;
+        }
+        #myBtn:hover {
+            background-color: rgba(255,255,255,0.5);
+        }
+    </style>
+
+</head>
+
+<body class="font-monospace">
+
+    <button onclick="topFunction()" id="myBtn" title="Back to top">☝️</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div class="container fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" aria-label="Eleventh navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./">Rhitvik Sinha</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample09">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./edu">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./photo">Photography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section style="margin: 0.5in 12% 0% 12%">
+        <div class="container py-5">
+            <div class="main-timeline-2">
+                <div class="timeline-2 left-2">
+                    <div class="card">
+                        <img src="./assets/img/nyu.jpg" class="card-img-top"
+                        alt="Responsive image">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-4">New York University</h4>
+                            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2022-2024</p>
+                            <p class="mb-0">Master of Science in Computer Science, Courant Institute of Mathematical 
+                                Sciences
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-2 right-2">
+                    <div class="card">
+                        <img src="./assets/img/kgp.jpg" class="card-img-top"
+                        alt="Responsive image">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-4">Indian Institute of Technology, Kharagpur</h4>
+                            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2018-2022</p>
+                            <p class="mb-0">Bachelor of Technology (Hons.) in Electrical Engineering, Department of 
+                                Electrical Engineering
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-2 left-2">
+                    <div class="card">
+                        <img src="./assets/img/dpsrkp.jpg" class="card-img-top"
+                        alt="Responsive image">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-4">Delhi Public School, R.K. Puram, New Delhi</h4>
+                            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2016-2018</p>
+                            <p class="mb-0">Grades 11th & 12th</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-2 right-2">
+                    <div class="card">
+                        <img src="./assets/img/dpsrpk.jpg" class="card-img-top"
+                        alt="Responsive image">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-4"> Delhi Public School, Ruby Park, Kolkata</h4>
+                            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2006-2016</p>
+                            <p class="mb-0">Grades 1st-10th
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

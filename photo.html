@@ -1,0 +1,429 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Picture Gallery | Rhitvik Sinha</title>
+    <meta name="description" content="Personal Web Page">
+    <meta name="author" content="Rhitvik Sinha">
+
+    <meta property="og:title" content="Picture Gallery | Rhitvik Sinha">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rhitviksinha.github.io/">
+    <meta property="og:description" content="Rhitvik Sinha's Personal Web Page.">
+    <meta property="og:image" content="./assets/img/rhitvik.JPG">
+
+    <link rel="icon" href="./assets/img/favicon1.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+    <link href="./assets/css/navbar.css" rel="stylesheet">
+    <link href="./assets/css/features.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('./assets/img/nyc-winter.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            background-color: rgba(0,0,0,0.75);
+            background-blend-mode: darken;
+        }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 30px;
+            border: 2px solid white;
+            outline: none;
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            cursor: pointer;
+            padding: 11px 21px 13px 19px;
+            border-radius: 50%;
+        }
+        #myBtn:hover {
+            background-color: rgba(255,255,255,0.5);
+        }
+    </style>
+
+</head>
+
+<body class="font-monospace">
+
+    <button onclick="topFunction()" id="myBtn" title="Back to top">☝️</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div class="container fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" aria-label="Eleventh navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./">Rhitvik Sinha</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample09">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./edu">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./photo">Photography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div style="margin-top: 0.7in;" class="text-light container px-4 py-5" id="custom-cards">
+
+        <h3 class="pb-4 border-bottom" style="margin: 0% 5% 0% 5%;">
+            I enjoy partaking in some amateur photography, whipping out my phone to capture whatever visually 
+            pleasing scenery I come across. Some examples:
+        </h3>
+    
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" 
+                     style="background-image: url('./assets/img/rashtrapati-bhavan.JPG');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            Rashtrapati Bhavan, New Delhi
+                        </h2>
+
+                        <ul class="d-flex list-unstyled mt-auto">
+
+                            <li class="me-auto">
+                                <img src="./assets/img/rashtrapati-bhavan.JPG" alt="Instagram" width="32" height="32" class="rounded-circle">
+                            </li>
+
+                            <li class="d-flex align-items-center me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-calendar3" viewBox="0 0 16 16">
+                                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                <small>2020</small>
+                            </li>
+
+                            <li class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-camera2" viewBox="0 0 16 16">
+                                    <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/>
+                                    <path d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/>
+                                </svg>
+                                <small>iPhone XR</small>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" 
+                     style="background-image: url('./assets/img/san-diego-sunset-grid.JPG');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            Del Mar, San Diego, California
+                        </h2>
+
+                        <ul class="d-flex list-unstyled mt-auto">
+
+                            <li class="me-auto">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/B1YyqFSHWUe/">
+                                    <img src="./assets/img/instagram-logo.png" alt="Instagram" width="32" height="32" class="rounded-circle">
+                                </a>
+                            </li>
+
+                            <li class="d-flex align-items-center me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-calendar3" viewBox="0 0 16 16">
+                                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                <small>2018</small>
+                            </li>
+
+                            <li class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-camera2" viewBox="0 0 16 16">
+                                    <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/>
+                                    <path d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/>
+                                </svg>
+                                <small>iPhone XR</small>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" 
+                     style="background-image: url('./assets/img/delhi.JPG');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            Rajiv Chowk Metro, New Delhi
+                        </h2>
+
+                        <ul class="d-flex list-unstyled mt-auto">
+
+                            <li class="me-auto">
+                                <img src="./assets/img/delhi.JPG" alt="Instagram" width="32" height="32" class="rounded-circle">
+                            </li>
+
+                            <li class="d-flex align-items-center me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-calendar3" viewBox="0 0 16 16">
+                                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                <small>2019</small>
+                            </li>
+
+                            <li class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-camera2" viewBox="0 0 16 16">
+                                    <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/>
+                                    <path d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/>
+                                </svg>
+                                <small>iPhone XR</small>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" 
+                     style="background-image: url('./assets/img/hillside-monastery.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            Diskit Monastery, Ladakh
+                        </h2>
+
+                        <ul class="d-flex list-unstyled mt-auto">
+
+                            <li class="me-auto">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/B0oA9iQHCl3">
+                                    <img src="./assets/img/instagram-logo.png" alt="Instagram" width="32" height="32" class="rounded-circle">
+                                </a>
+                            </li>
+
+                            <li class="d-flex align-items-center me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-calendar3" viewBox="0 0 16 16">
+                                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                <small>2019</small>
+                            </li>
+
+                            <li class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-camera2" viewBox="0 0 16 16">
+                                    <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/>
+                                    <path d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/>
+                                </svg>
+                                <small>iPhone XR</small>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg"
+                     style="background-image: url('./assets/img/kgp-window.JPG');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            IIT Campus, Kharagpur, West Bengal
+                        </h2>
+
+                        <ul class="d-flex list-unstyled mt-auto">
+
+                            <li class="me-auto">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/B1lqQkBnRZ5">
+                                    <img src="./assets/img/instagram-logo.png" alt="Instagram" width="32" height="32" class="rounded-circle">
+                                </a>
+                            </li>
+
+                            <li class="d-flex align-items-center me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-calendar3" viewBox="0 0 16 16">
+                                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                <small>2019</small>
+                            </li>
+
+                            <li class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-camera2" viewBox="0 0 16 16">
+                                    <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/>
+                                    <path d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/>
+                                </svg>
+                                <small>iPhone XR</small>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" 
+                     style="background-image: url('./assets/img/casino.JPG');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            Casino @ MGM Grand, Las Vegas, Nevada
+                        </h2>
+
+                        <ul class="d-flex list-unstyled mt-auto">
+
+                            <li class="me-auto">
+                                <img src="./assets/img/casino.JPG" alt="" width="32" height="32" class="rounded-circle">
+                            </li>
+
+                            <li class="d-flex align-items-center me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-calendar3" viewBox="0 0 16 16">
+                                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                <small>2018</small>
+                            </li>
+
+                            <li class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-camera2" viewBox="0 0 16 16">
+                                    <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/>
+                                    <path d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/>
+                                </svg>
+                                <small>iPhone XR</small>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg"
+                     style="background-image: url('./assets/img/sunset-couple.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            Torrey Pines, San Diego, California
+                        </h2>
+
+                        <ul class="d-flex list-unstyled mt-auto">
+
+                            <li class="me-auto">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/B540VYNH4G2/">
+                                    <img src="./assets/img/instagram-logo.png" alt="Instagram" width="32" height="32" class="rounded-circle">
+                                </a>
+                            </li>
+
+                            <li class="d-flex align-items-center me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-calendar3" viewBox="0 0 16 16">
+                                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                <small>2018</small>
+                            </li>
+
+                            <li class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-camera2" viewBox="0 0 16 16">
+                                    <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/>
+                                    <path d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/>
+                                </svg>
+                                <small>iPhone XR</small>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg"
+                     style="background-image: url('...');"
+                     aria-hidden="true">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            View more @rhit.click on instagram
+                        </h2>
+
+                        <ul class="d-flex list-unstyled mt-auto">
+
+                            <li class="me-auto">
+                                <a class="stretched-link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/rhit.click/">
+                                    <img src="./assets/img/instagram-logo.png" alt="Instagram" width="32" height="32" class="rounded-circle">
+                                </a>
+                            </li>
+
+                            <li class="d-flex align-items-center me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-calendar3" viewBox="0 0 16 16">
+                                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                <small>Year</small>
+                            </li>
+
+                            <li class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-camera2" viewBox="0 0 16 16">
+                                    <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/>
+                                    <path d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/>
+                                </svg>
+                                <small>Camera</small>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+      <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

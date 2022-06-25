@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Projects & Experience | Rhitvik Sinha</title>
+    <meta name="description" content="Personal Web Page">
+    <meta name="author" content="Rhitvik Sinha">
+
+    <meta property="og:title" content="Projects & Experience | Rhitvik Sinha">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rhitviksinha.github.io/">
+    <meta property="og:description" content="Rhitvik Sinha's Personal Web Page.">
+    <meta property="og:image" content="./assets/img/rhitvik.JPG">
+
+    <link rel="icon" href="./assets/img/favicon1.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+    <link href="./assets/css/navbar.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url('./assets/img/nyc-winter.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            background-color: rgba(0,0,0,0.75);
+            background-blend-mode: darken;
+        }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 30px;
+            border: 2px solid white;
+            outline: none;
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            cursor: pointer;
+            padding: 11px 21px 13px 19px;
+            border-radius: 50%;
+        }
+        #myBtn:hover {
+            background-color: rgba(255,255,255,0.5);
+        }
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+            }
+        }
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+        /* .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        } */
+    </style>
+
+    
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Back to top">☝️</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div class="container font-monospace fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" aria-label="Eleventh navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./">Rhitvik Sinha</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample09">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./edu">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./photo">Photography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+<main>
+
+  <section class="text-light py-5 mt-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Projects, Internships & Experience(s)</h1>
+        <p class="lead">
+            Feel free to contact me with questions that you have about any of the follwing listed projects. 
+            These are also listed in a more structured format in my CV.
+        </p>
+        <p>
+          <a target="_blank" rel="noopener noreferrer" href="./contact" class="btn btn-primary my-2">Contact Info</a>
+          <a target="_blank" rel="noopener noreferrer" href="./assets/pdf/cv.pdf" class="btn btn-secondary my-2">CV / Resume</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+    <div class="album py-5">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                <div class="col">
+                    <div class="card text-bg-light">
+                        <div class="card-header">Internship</div>
+                        <img src="./assets/img/meity.jpg" width="100%" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title">Transformational AI Intern</h5>
+                            <h6 class="card-title text-muted">Ministry of Electronics and Information Technology, Government of India</h6>
+                            <p class="card-text">
+                                Working on Transformational AI projects in the Health Sector, as part of Ministry of Electronics
+                                and Information Technology's Digital India Internship (DII) Scheme, 2021. Responsible for the
+                                landscaping and the subsequent review of the ecosystem and policies operating at the
+                                intersection of AI and Healthcare in India.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="./assets/pdf/cv.pdf">Certificate</a>
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="https://www.meity.gov.in/digital-india-internship-scheme-2021-2nd-cycle">DII Webpage</a>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Fall 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-bg-light">
+                        <div class="card-header">Graduate Course Project</div>
+                        <img src="https://moboehle.github.io/CoDA-Nets/media/goldfinch.gif" width="100%" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title">Interpretable Convolutional Neural Nets</h5>
+                            <h6 class="card-title text-muted">CS60021: Scalable Data Mining</h6>
+                            <p class="card-text">
+                                <ul>
+                                    <li>
+                                        Guided by the instructor, Prof. Sourangshu Bhattacharya.
+                                    </li>
+                                    <li>
+                                        For the class CS60021, Scalable Data Mining, taken in Fall 2021 at IIT Kharagpur.
+                                    </li>
+                                    <li>
+                                        Implement "Convolutional Dynamic Alignment Networks for Interpretable Classifications" 
+                                        (2021, Böhle et al.) using PyTorch as Deep Learning framework of choice.
+                                    </li>
+                                </ul>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="https://docs.google.com/presentation/d/1WmGWEKWm_RhFeE4CXrv9-3ZpCwiL9AF7u4fRFhHVzn4/edit?usp=sharing/">
+                                           Slides
+                                        </a>
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="./assets/pdf/SDM Term Project Certificate.pdf">Certificate</a>
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="https://moboehle.github.io/CoDA-Nets/">Author's Website</a>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Fall 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-bg-light">
+                        <div class="card-header">Self Project</div>
+                        <img src="./assets/img/numpynet.JPG" width="100%" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title">NumpyNet</h5>
+                            <h6 class="card-title text-muted">Neural Net using nothing but NumPy</h6>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Layers implemented: Dense, Sigmoid, ReLU, Tanh</li>
+                                    <li>Error functions implemented: Binary Cross Entropy, Mean Absolute Error, Mean Squared Error</li>
+                                    <li>Optimizers implemented: Stochastic Gradient Descent</li>
+                                </ul>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="https://rhitviksinha.github.io/NumpyNET/">Webpage</a>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Summer 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-bg-light">
+                        <div class="card-header">Internship</div>
+                        <img src="./assets/img/kabuni-project.png" width="100%" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title">Human Pose Estimation Intern</h5>
+                            <h6 class="card-title text-muted">Kabuni Sports</h6>
+                            <p class="card-text">
+                                Apply pre-trained Deep Learning models for the Human Pose Estimation task. Use extracted
+                                Pose Information to suggest improvements in a Cricket (Sport) Learner's technique, preventing
+                                inefficiency and injuries.
+                                <ul>
+                                    <li>
+                                        Python based implementation, with Deep Learning framework of choice being PyTorch.
+                                    </li>
+                                    <li>
+                                        Generate time series pose data from video clips using pre-trained models such as 
+                                        Torchvision's KeypointRCNN. Finetune models for highest accuracy.
+                                    </li>
+                                    <li>
+                                        Maximize accuracy at detection of potential errors in playing form / technique 
+                                        using time series techniques such as Recurrent Neural Nets.
+                                    </li>
+                                </ul>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="./assets/pdf/Kabuni_Internship acceptance.pdf">Certificate</a>
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="https://kabuni.com/">Company Website</a>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Summer 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-bg-light">
+                        <div class="card-header">Bachelor's Project</div>
+                        <img src="https://agupubs.onlinelibrary.wiley.com/cms/asset/d5654207-0d55-4143-91fd-1a8e716b73e7/jame21058-fig-0001-m.png" width="100%" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title">Forecasting of Extreme-Causing Weather Patterns Using Deep Learning</h5>
+                            <h6 class="card-title text-muted">Centre for Excellence in Artificial Intelligence (CAI), 
+                                Indian Institute of Technology Kharagpur</h6>
+                            <p class="card-text">
+                                <ul>
+                                    <li>
+                                        Supervised by Dr. Adway Mitra, compare effectiveness and accuracies of Capsule Neural
+                                        Networks compared to Convolutional Networks at the task of "Forecasting Extreme Weather
+                                        Patterns".
+                                    </li>
+                                    <li>
+                                        Dataset Used: NCAR CESM-LENS (stored on AWS S3)
+                                    </li>
+                                    <li>
+                                        Python-based implementation, PyTorch used as Deep Learning framework of choice to
+                                        implement “Dynamic Routing Between Capsules”(2017, Hinton et al.) from scratch.
+                                    </li>
+                                    <li>
+                                        Recreate findings from “Analog Forecasting of Extreme-Causing Weather Patterns Using Deep
+                                        Learning”(2020, Chattopadhyay et al.)
+                                    </li>
+                                </ul>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="https://docs.google.com/presentation/d/1QR7NRuaf9YTWmeu0vdQPOJ7WcK4M9pvXqiH5cSUhWLk/edit?usp=sharing">
+                                           Slides
+                                        </a>
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="./assets/pdf/CapsNet Project.pdf">Certificate</a>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Spring 2021 - Fall 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-bg-light">
+                        <div class="card-header">Graduate Course Project</div>
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/elTwUVg_E1M"></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">SAT-based techniques in Low Power State Assignment</h5>
+                            <h6 class="card-title text-muted">AI61005: Artificial Intelligence Foundations and Applications</h6>
+                            <p class="card-text">
+                                <ul>
+                                    <li>This project is done under the guidance of Professor Partha Pratim Chakrabarti and 
+                                        Professor Arijit Mondal of IIT Kharagpur.
+                                    </li>
+                                    <li>Usage of AI techniques in your departmental domain (Electrical Engineering).</li>
+                                    <li>Reference research paper: http://dx.doi.org/10.1142/S0218126611007980</li>
+                                </ul>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="https://docs.google.com/presentation/d/1fXCrMyw8hTjN9R3zB2SElm2IrTP_ntYAoabRzHDJqng/edit?usp=sharing/">
+                                            Slides
+                                        </a>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Spring 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-bg-light">
+                        <div class="card-header">Undergraduate Course Project</div>
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/k5u282V13-k"></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Boolean Algebra Solver</h5>
+                            <h6 class="card-title text-muted">EC31003: Digital Electronic Circuits</h6>
+                            <p class="card-text">
+                                <ul>
+                                    <li>
+                                        Guided by Prof.Goutam Saha.
+                                    </li>
+                                    <li>
+                                        For the class EC31003, Digital Electronic Circuits, taken in Fall 2020, at IIT Kharagpur.
+                                    </li>
+                                    <li>
+                                        Design and presented the software "Boolean Algebra Solver" that solves many modern day 
+                                        Boolean Algebra problems like K-Map, Quine-McCluskey Algorithm, Hazard Detection and 
+                                        Removal, Hamming Code Generation, etc.
+                                    </li>
+                                    <li>
+                                        C# based implementation.
+                                    </li>
+                                </ul>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="https://drive.google.com/file/d/1MlwUrSS6oUZ-F2PMRJVIWFhQZM9XJ3K1/view?usp=sharing">
+                                            Software
+                                        </a>
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="https://github.com/gaumo62/BooleanAlgebraSolver">GitHub</a>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Fall 2020</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-bg-light">
+                        <div class="card-header">Internship</div>
+                        <img src="./assets/img/ottonomy.png" width="100%" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title">Autonomous Robotics & AI Intern</h5>
+                            <h6 class="card-title text-muted">Ottonomy.IO</h6>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Automate last mile delivery through self-driving rovers that operate on sidewalks.</li>
+                                    <li>
+                                        Setting up of cloud-based training and deployment pipelines for Deep Learning models
+                                        utilizing AWS services, including but not limited to: S3, EC2, SageMaker.
+                                    </li>
+                                    <li>Pipelines for the following frameworks were setup: TensorFlow, PyTorch</li>
+                                </ul>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="./assets/pdf/Ottonomy Internship.pdf">Certificate</a>
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="https://ottonomy.io/">Company Website</a>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Summer 2020</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-bg-light">
+                        <div class="card-header">Self Project</div>
+                        <img src="https://raw.githubusercontent.com/rhitviksinha/Image-Denoising-using-AutoEncoders/main/image/architecture.JPG" width="100%" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title">Auto Encoders</h5>
+                            <h6 class="card-title text-muted">Practical Applications of Auto Encoders</h6>
+                            <p class="card-text">Image processing in Python using Keras with TensorFlow 2 backend.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="https://github.com/rhitviksinha/Image-Super-Resolution-using-AutoEncoders/">Super-Resolution</a>
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="https://github.com/rhitviksinha/Image-Denoising-using-AutoEncoders/">De-Noising</a>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Summer 2020</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-bg-light">
+                        <div class="card-header">Hackathon</div>
+                        <img src="./assets/img/MS pitch.jpg" width="100%" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title">parkMyCar</h5>
+                            <h6 class="card-title text-muted">Microsoft presents Innovation Hackathon, an initiative of IncubateIND</h6>
+                            <p class="card-text">
+                                <ul>
+                                    <li>
+                                        Developed in 24 hours at Microsoft presents Innovation Hackathon, an initiative of IncubateIND, 
+                                        powered by Microsoft Azure.
+                                    </li>
+                                    <li>
+                                        Provides real-time car park availability, also enables you to list personal land for parking.
+                                    </li>
+                                    <li>
+                                        Developed using MapMyIndia APIs and hosted on Microsoft Azure servers.
+                                    </li>
+                                    <li>
+                                        Tools used: HTML, CSS, JavaScript, Python (Flask).
+                                    </li>
+                                </ul>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="https://ms.ayushgoyal.dev/">Landing Page</a>
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="https://github.com/ayush6624/ms-hackathon">GitHub</a>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Winter 2019</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col">
+                    <div class="card text-bg-light">
+                        <div class="card-header">Header</div>
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <div class="card-body">
+                            <h5 class="card-title">Title</h5>
+                            <h6 class="card-title text-muted">Sub-title</h6>
+                            <p class="card-text">Sample Card.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+
+</main>
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>

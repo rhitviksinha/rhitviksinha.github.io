@@ -1,0 +1,140 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contact Me | Rhitvik Sinha</title>
+    <meta name="description" content="Personal Web Page">
+    <meta name="author" content="Rhitvik Sinha">
+
+    <meta property="og:title" content="Contact Me | Rhitvik Sinha">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rhitviksinha.github.io/">
+    <meta property="og:description" content="Rhitvik Sinha's Personal Web Page.">
+    <meta property="og:image" content="./assets/img/rhitvik.JPG">
+
+    <link rel="icon" href="./assets/img/favicon1.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+
+    <!-- For social media buttons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./assets/css/social.css" rel="stylesheet">
+
+    <link href="./assets/css/navbar.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url('./assets/img/nyc-winter.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            background-color: rgba(0,0,0,0.75);
+            background-blend-mode: darken;
+        }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 30px;
+            border: 2px solid white;
+            outline: none;
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            cursor: pointer;
+            padding: 11px 21px 13px 19px;
+            border-radius: 50%;
+        }
+        #myBtn:hover {
+            background-color: rgba(255,255,255,0.5);
+        }
+    </style>
+
+</head>
+
+<body class="font-monospace">
+
+    <button onclick="topFunction()" id="myBtn" title="Back to top">☝️</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div class="container fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" aria-label="Eleventh navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./">Rhitvik Sinha</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample09">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./edu">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./photo">Photography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="d-flex pt-2 justify-content-center"
+         style="background-color: rgba(255,255,255,0.1);
+                margin: 3.0in 15% 0% 15%;">
+        <a href="https://github.com/rhitviksinha" class="fa fa-github" target="_blank"></a>
+        <a href="mailto:rs8438@nyu.edu" class="fa fa-nyu" target="_blank"></a>
+        <a href="mailto:rhitvik.sinha@iitkgp.ac.in" class="fa fa-kgp" target="_blank"></a>
+        <a href="mailto:rhitviksinha29@gmail.com" class="fa fa-google" target="_blank"></a>
+    </div>
+
+    <div class="d-flex pb-2 justify-content-center"
+         style="background-color: rgba(255,255,255,0.1);
+                margin: 0% 15% 0% 15%;">
+        <a href="https://fb.me/rhitvik.sinha" class="fa fa-facebook" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/rhitvik-sinha/" class="fa fa-linkedin" target="_blank"></a>
+        <a href="https://www.instagram.com/rhitviksinha/" class="fa fa-instagram" target="_blank"></a>
+        <a href="https://wa.me/918585896289" class="fa fa-whatsapp" target="_blank"></a>
+    </div>
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

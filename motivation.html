@@ -1,0 +1,159 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>&lt;/sarc&gt;</title>
+    <meta name="description" content="Personal Web Page">
+    <meta name="author" content="Rhitvik Sinha">
+
+    <meta property="og:title" content="Rhitvik Sinha">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rhitviksinha.github.io/">
+    <meta property="og:description" content="Rhitvik Sinha's Personal Web Page.">
+    <meta property="og:image" content="./assets/img/rhitvik.JPG">
+
+    <link rel="icon" href="./assets/img/favicon1.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+    <link href="./assets/css/navbar.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('./assets/img/nyc-winter.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            background-color: rgba(0,0,0,0.75);
+            background-blend-mode: darken;
+        }
+        img {
+            filter: brightness(80%);
+            /* border-radius: 3%;
+            box-shadow: 25px 15px 25px 3px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+        }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 30px;
+            border: 2px solid white;
+            outline: none;
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            cursor: pointer;
+            padding: 11px 21px 13px 19px;
+            border-radius: 50%;
+        }
+        #myBtn:hover {
+            background-color: rgba(255,255,255,0.5);
+        }
+    </style>
+
+</head>
+
+<body class="font-monospace text-light">
+
+    <button onclick="topFunction()" id="myBtn" title="Back to top">☝️</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div class="container fixed-top">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark rounded" aria-label="Eleventh navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
+                    </svg>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample09">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./motivation">
+                                <i>&lt;/sarc&gt;</i> Motivation for CS, ML & Math
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- <div id="content"><iframe src="https://flowcv.me/rhitvik" title="flowcv" style="height:100vh; width:100%; border:none;"></iframe></div> -->
+
+    <div class="container text-center" style="margin-top: 1.2in;">
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner rounded-3 shadow-4-strong">
+                        <div class="carousel-item active">
+                            <img src="./assets/img/cs.JPG" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/ML.JPG" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/math.JPG" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-6">
+                <small>
+                    i'm unaware of the source of these images. so, if you know who originally made these, 
+                    please <a class="link-info text-decoration-none" target="_blank" 
+                              rel="noopener noreferrer" href="./contact">contact me</a> 
+                    and let me know. i'll link to the originals.
+                </small>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
