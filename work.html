@@ -95,7 +95,7 @@
 
     
 </head>
-<body>
+<body class="font-monospace text-light">
 
     <button onclick="topFunction()" id="myBtn" title="Back to top">☝️</button>
     <script>
@@ -120,7 +120,7 @@
         }
     </script>
 
-    <div class="container font-monospace fixed-top">
+    <div class="container fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" aria-label="Eleventh navbar example">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./">Rhitvik Sinha</a>
@@ -163,11 +163,11 @@
         <h1 class="fw-light">Projects, Internships & Experience(s)</h1>
         <p class="lead">
             Feel free to contact me with questions that you have about any of the follwing listed projects. 
-            These are also listed in a more structured format in my CV.
+            These are also listed in a more structured format in my Resume.
         </p>
         <p>
           <a target="_blank" rel="noopener noreferrer" href="./contact" class="btn btn-primary my-2">Contact Info</a>
-          <a target="_blank" rel="noopener noreferrer" href="./assets/pdf/cv.pdf" class="btn btn-secondary my-2">CV / Resume</a>
+          <a target="_blank" rel="noopener noreferrer" href="./assets/pdf/cv.pdf" class="btn btn-secondary my-2">Resume (One-Page)</a>
         </p>
       </div>
     </div>
@@ -180,17 +180,60 @@
 
                 <div class="col">
                     <div class="card text-bg-light">
+                        <div class="card-header">Graduate Course Project</div>
+                        <img src="./assets/img/diffusion.png" width="100%" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title">Optimizing Diffusion Models for Image De-Noising</h5>
+                            <h6 class="card-title text-muted">CSCI-GA 2565: Machine Learning (NYU)</h6>
+                            <p class="card-text">
+                                <ul>
+                                    <li>
+                                        Guided by the instructor, Prof. Rajesh Ranganath.
+                                    </li>
+                                    <li>
+                                        Reviewed literature on generative models (VAEs, GANs etc), with special emphasis on diffusion models.
+                                    </li>
+                                    <li>
+                                        Reproduced results from Denoising Diffusion Probabilistic Model (DDPM) to set benchmark results.
+                                    </li>
+                                    <li>
+                                        Modified pre-trained diffusion models to accept noisy images as input, and reported effect of input noise level,
+                                        diffusion input step and diffusion cycles on the de-noising output of DDPM.
+                                    </li>
+                                    <li>
+                                        Designed a custom class conditional DDPM for missing pixel imputation; achieved similar images to benchmark.
+                                    </li>
+                                </ul>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                           href="./assets/pdf/diffusion.pdf">Paper</a>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Fall 2022</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-bg-light">
                         <div class="card-header">Internship</div>
                         <img src="./assets/img/meity.jpg" width="100%" height="200">
                         <div class="card-body">
                             <h5 class="card-title">Transformational AI Intern</h5>
                             <h6 class="card-title text-muted">Ministry of Electronics and Information Technology, Government of India</h6>
                             <p class="card-text">
-                                Working on Transformational AI projects in the Health Sector, as part of Ministry of Electronics
-                                and Information Technology's Digital India Internship (DII) Scheme, 2021. Responsible for the
-                                landscaping and the subsequent review of the ecosystem and policies operating at the
-                                intersection of AI and Healthcare in India.
-                            </p>
+                                <li>
+                                    Worked directly under the supervision of Mrs. Kavita Bhatia (Senior Director, MeITy), on Transformational AI
+                                    projects in the Health Sector, as part of Ministry's Digital India Internship Scheme (2021).
+                                </li>
+                                <li>
+                                    Landscaped and reviewed the ecosystem and policies operating at the intersection of AI and healthcare in India.
+                                </li>
+                        </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-primary">
@@ -214,7 +257,7 @@
                         <img src="https://moboehle.github.io/CoDA-Nets/media/goldfinch.gif" width="100%" height="200">
                         <div class="card-body">
                             <h5 class="card-title">Interpretable Convolutional Neural Nets</h5>
-                            <h6 class="card-title text-muted">CS60021: Scalable Data Mining</h6>
+                            <h6 class="card-title text-muted">CS60021: Scalable Data Mining (IIT-KGP)</h6>
                             <p class="card-text">
                                 <ul>
                                     <li>
@@ -287,20 +330,20 @@
                             <h5 class="card-title">Human Pose Estimation Intern</h5>
                             <h6 class="card-title text-muted">Kabuni Sports</h6>
                             <p class="card-text">
-                                Apply pre-trained Deep Learning models for the Human Pose Estimation task. Use extracted
-                                Pose Information to suggest improvements in a Cricket (Sport) Learner's technique, preventing
-                                inefficiency and injuries.
                                 <ul>
                                     <li>
-                                        Python based implementation, with Deep Learning framework of choice being PyTorch.
+                                        Applied pre-trained Deep Learning models for the Human Pose Estimation (HPE) task. Used extracted
+                                        Pose Information to suggest improvements in a Cricket (Sport) Learner's technique, preventing
+                                        inefficiency and injuries.
                                     </li>
                                     <li>
-                                        Generate time series pose data from video clips using pre-trained models such as 
-                                        Torchvision's KeypointRCNN. Finetune models for highest accuracy.
+                                        Fine-tuned Torchvision's KeypointRCNN class for best accuracy in the HPE task.
                                     </li>
                                     <li>
-                                        Maximize accuracy at detection of potential errors in playing form / technique 
-                                        using time series techniques such as Recurrent Neural Nets.
+                                        Outputs from KeypointRCNN used to generate sequential pose data from video clips.
+                                    </li>
+                                    <li>
+                                        Trained sequence models to detect potential errors in pose and technique from generated data.
                                     </li>
                                 </ul>
                             </p>
@@ -327,25 +370,20 @@
                         <img src="https://agupubs.onlinelibrary.wiley.com/cms/asset/d5654207-0d55-4143-91fd-1a8e716b73e7/jame21058-fig-0001-m.png" width="100%" height="200">
                         <div class="card-body">
                             <h5 class="card-title">Forecasting of Extreme-Causing Weather Patterns Using Deep Learning</h5>
-                            <h6 class="card-title text-muted">Centre for Excellence in Artificial Intelligence (CAI), 
-                                Indian Institute of Technology Kharagpur</h6>
+                            <h6 class="card-title text-muted">Centre for Excellence in Artificial Intelligence (CAI), IIT-KGP</h6>
                             <p class="card-text">
                                 <ul>
                                     <li>
-                                        Supervised by Dr. Adway Mitra, compare effectiveness and accuracies of Capsule Neural
-                                        Networks compared to Convolutional Networks at the task of "Forecasting Extreme Weather
-                                        Patterns".
+                                        Supervised by Dr. Adway Mitra, performed literature review, with specific focus on Capsule Neural
+                                        Networks and Analog Weather Forecasting.
                                     </li>
                                     <li>
-                                        Dataset Used: NCAR CESM-LENS (stored on AWS S3)
+                                        Used surface temperature (T2m) and geopotential height at 500 mbar (Z500) (from the NCAR CESM-LENS
+                                        datatset) to make analogous predictions of the onset of heat/cold waves over North America, 1-5 days ahead.
                                     </li>
                                     <li>
-                                        Python-based implementation, PyTorch used as Deep Learning framework of choice to
-                                        implement “Dynamic Routing Between Capsules”(2017, Hinton et al.) from scratch.
-                                    </li>
-                                    <li>
-                                        Recreate findings from “Analog Forecasting of Extreme-Causing Weather Patterns Using Deep
-                                        Learning”(2020, Chattopadhyay et al.)
+                                        Observed that CapsNets outperformed CNNs and logistic regression; confirmed trends observed in the paper
+                                        'Analog Forecasting of Extreme-Causing Weather Patterns Using Deep Learning' (2020, Chattopadhyay et al.)
                                     </li>
                                 </ul>
                             </p>
@@ -374,7 +412,7 @@
                         <iframe width="100%" height="200" src="https://www.youtube.com/embed/elTwUVg_E1M"></iframe>
                         <div class="card-body">
                             <h5 class="card-title">SAT-based techniques in Low Power State Assignment</h5>
-                            <h6 class="card-title text-muted">AI61005: Artificial Intelligence Foundations and Applications</h6>
+                            <h6 class="card-title text-muted">AI61005: Artificial Intelligence Foundations and Applications (IIT-KGP)</h6>
                             <p class="card-text">
                                 <ul>
                                     <li>This project is done under the guidance of Professor Partha Pratim Chakrabarti and 
@@ -405,7 +443,7 @@
                         <iframe width="100%" height="200" src="https://www.youtube.com/embed/k5u282V13-k"></iframe>
                         <div class="card-body">
                             <h5 class="card-title">Boolean Algebra Solver</h5>
-                            <h6 class="card-title text-muted">EC31003: Digital Electronic Circuits</h6>
+                            <h6 class="card-title text-muted">EC31003: Digital Electronic Circuits (IIT-KGP)</h6>
                             <p class="card-text">
                                 <ul>
                                     <li>
@@ -452,12 +490,13 @@
                             <h6 class="card-title text-muted">Ottonomy.IO</h6>
                             <p class="card-text">
                                 <ul>
-                                    <li>Automate last mile delivery through self-driving rovers that operate on sidewalks.</li>
                                     <li>
-                                        Setting up of cloud-based training and deployment pipelines for Deep Learning models
-                                        utilizing AWS services, including but not limited to: S3, EC2, SageMaker.
+                                        Assisted with the automation of last mile delivery through self-driving rovers that operate on sidewalks.
                                     </li>
-                                    <li>Pipelines for the following frameworks were setup: TensorFlow, PyTorch</li>
+                                    <li>
+                                        Set up cloud-based training and deployment pipelines for Deep Learning frameworks (TensorFlow, PyTorch)
+                                        utilizing AWS services: S3, EC2, SageMaker.
+                                    </li>
                                 </ul>
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
