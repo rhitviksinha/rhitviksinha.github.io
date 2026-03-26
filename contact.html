@@ -11,7 +11,7 @@
 
     <meta property="og:title" content="Contact Me | Rhitvik Sinha">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rhitviksinha.github.io/">
+    <meta property="og:url" content="https://rhitviksinha.github.io/contact">
     <meta property="og:description" content="Rhitvik Sinha's Personal Web Page.">
     <meta property="og:image" content="./assets/img/rhitvik.JPG">
 
@@ -19,6 +19,7 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+    <link href="./assets/css/common.css" rel="stylesheet">
 
     <!-- For social media buttons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,64 +27,14 @@
 
     <link href="./assets/css/navbar.css" rel="stylesheet">
 
-    <style>
-        body {
-            background-image: url('./assets/img/nyc-winter.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;  
-            background-size: cover;
-            background-color: rgba(0,0,0,0.75);
-            background-blend-mode: darken;
-        }
-        #myBtn {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 30px;
-            z-index: 99;
-            font-size: 30px;
-            border: 2px solid white;
-            outline: none;
-            background-color: rgba(255,255,255,0.2);
-            color: white;
-            cursor: pointer;
-            padding: 11px 21px 13px 19px;
-            border-radius: 50%;
-        }
-        #myBtn:hover {
-            background-color: rgba(255,255,255,0.5);
-        }
-    </style>
-
 </head>
 
 <body class="font-monospace">
 
-    <button onclick="topFunction()" id="myBtn" title="Back to top">☝️</button>
-    <script>
-        //Get the button
-        var mybutton = document.getElementById("myBtn");
-        
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-        
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+    <button id="myBtn" aria-label="Back to top" title="Back to top">☝️</button>
 
     <div class="container fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" aria-label="Eleventh navbar example">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" aria-label="Main navigation">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./">Rhitvik Sinha</a>
 
@@ -109,6 +60,9 @@
                             <a class="nav-link" href="./photo">Photography</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="./randutils">randutils</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./contact">Contact</a>
                         </li>
                     </ul>
@@ -120,21 +74,22 @@
     <div class="d-flex pt-2 justify-content-center"
          style="background-color: rgba(255,255,255,0.1);
                 margin: 3.0in 15% 0% 15%;">
-        <a href="https://github.com/rhitviksinha" class="fa fa-github" target="_blank"></a>
-        <a href="mailto:rhitvik.sinha@cs.nyu.edu" class="fa fa-nyu" target="_blank"></a>
-        <a href="mailto:rhitvik.sinha@iitkgp.ac.in" class="fa fa-kgp" target="_blank"></a>
-        <a href="mailto:rhitviksinha29@gmail.com" class="fa fa-google" target="_blank"></a>
+        <a href="https://github.com/rhitviksinha" class="fa fa-github" target="_blank" aria-label="GitHub"></a>
+        <a href="mailto:rhitviksinha@nyu.edu" class="fa fa-nyu" target="_blank" aria-label="NYU Email"></a>
+        <span class="fa fa-kgp" style="opacity:0.4;cursor:default;" aria-label="IIT Kharagpur Email (inactive)"></span>
+        <a href="mailto:rhitviksinha29@gmail.com" class="fa fa-google" target="_blank" aria-label="Gmail"></a>
     </div>
 
     <div class="d-flex pb-2 justify-content-center"
          style="background-color: rgba(255,255,255,0.1);
                 margin: 0% 15% 0% 15%;">
-        <a href="https://fb.me/rhitvik.sinha" class="fa fa-facebook" target="_blank"></a>
-        <a href="https://www.linkedin.com/in/rhitvik-sinha/" class="fa fa-linkedin" target="_blank"></a>
-        <a href="https://www.instagram.com/rhitviksinha/" class="fa fa-instagram" target="_blank"></a>
-        <a href="https://wa.me/17607593197" class="fa fa-whatsapp" target="_blank"></a>
+        <a href="https://fb.me/rhitvik.sinha" class="fa fa-facebook" target="_blank" aria-label="Facebook"></a>
+        <a href="https://www.linkedin.com/in/rhitvik-sinha/" class="fa fa-linkedin" target="_blank" aria-label="LinkedIn"></a>
+        <a href="https://www.instagram.com/rhitviksinha/" class="fa fa-instagram" target="_blank" aria-label="Instagram"></a>
+        <span class="fa fa-whatsapp" style="opacity:0.4;cursor:default;" aria-label="WhatsApp (inactive)"></span>
     </div>
 
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/common.js"></script>
 </body>
 </html>

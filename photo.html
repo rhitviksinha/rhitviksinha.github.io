@@ -11,7 +11,7 @@
 
     <meta property="og:title" content="Picture Gallery | Rhitvik Sinha">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rhitviksinha.github.io/">
+    <meta property="og:url" content="https://rhitviksinha.github.io/photo">
     <meta property="og:description" content="Rhitvik Sinha's Personal Web Page.">
     <meta property="og:image" content="./assets/img/rhitvik.JPG">
 
@@ -19,66 +19,18 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+    <link href="./assets/css/common.css" rel="stylesheet">
     <link href="./assets/css/navbar.css" rel="stylesheet">
     <link href="./assets/css/features.css" rel="stylesheet">
-    <style>
-        body {
-            background-image: url('./assets/img/nyc-winter.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;  
-            background-size: cover;
-            background-color: rgba(0,0,0,0.75);
-            background-blend-mode: darken;
-        }
-        #myBtn {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 30px;
-            z-index: 99;
-            font-size: 30px;
-            border: 2px solid white;
-            outline: none;
-            background-color: rgba(255,255,255,0.2);
-            color: white;
-            cursor: pointer;
-            padding: 11px 21px 13px 19px;
-            border-radius: 50%;
-        }
-        #myBtn:hover {
-            background-color: rgba(255,255,255,0.5);
-        }
-    </style>
 
 </head>
 
 <body class="font-monospace">
 
-    <button onclick="topFunction()" id="myBtn" title="Back to top">☝️</button>
-    <script>
-        //Get the button
-        var mybutton = document.getElementById("myBtn");
-        
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-        
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+    <button id="myBtn" aria-label="Back to top" title="Back to top">☝️</button>
 
     <div class="container fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" aria-label="Eleventh navbar example">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" aria-label="Main navigation">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./">Rhitvik Sinha</a>
 
@@ -104,6 +56,9 @@
                             <a class="nav-link active" aria-current="page" href="./photo">Photography</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="./randutils">randutils</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="./contact">Contact</a>
                         </li>
                     </ul>
@@ -112,7 +67,7 @@
         </nav>
     </div>
 
-    <div style="margin-top: 0.7in;" class="text-light container px-4 py-5" id="custom-cards">
+    <div class="text-light container px-4 py-5 mt-content-sm" id="custom-cards">
 
         <h3 class="pb-4 border-bottom" style="margin: 0% 5% 0% 5%;">
             I enjoy partaking in some amateur photography, whipping out my phone to capture whatever visually 
@@ -462,6 +417,7 @@
 
     </div>
 
-      <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/common.js"></script>
 </body>
 </html>

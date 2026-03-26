@@ -11,7 +11,7 @@
 
     <meta property="og:title" content="Educational Timeline | Rhitvik Sinha">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rhitviksinha.github.io/">
+    <meta property="og:url" content="https://rhitviksinha.github.io/edu">
     <meta property="og:description" content="Rhitvik Sinha's Personal Web Page.">
     <meta property="og:image" content="./assets/img/rhitvik.JPG">
 
@@ -19,66 +19,18 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+    <link href="./assets/css/common.css" rel="stylesheet">
     <link href="./assets/css/navbar.css" rel="stylesheet">
     <link href="./assets/css/timeline.css" rel="stylesheet">
-    <style>
-        body {
-            background-image: url('./assets/img/nyc-winter.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;  
-            background-size: cover;
-            background-color: rgba(0,0,0,0.75);
-            background-blend-mode: darken;
-        }
-        #myBtn {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 30px;
-            z-index: 99;
-            font-size: 30px;
-            border: 2px solid white;
-            outline: none;
-            background-color: rgba(255,255,255,0.2);
-            color: white;
-            cursor: pointer;
-            padding: 11px 21px 13px 19px;
-            border-radius: 50%;
-        }
-        #myBtn:hover {
-            background-color: rgba(255,255,255,0.5);
-        }
-    </style>
 
 </head>
 
 <body class="font-monospace">
 
-    <button onclick="topFunction()" id="myBtn" title="Back to top">☝️</button>
-    <script>
-        //Get the button
-        var mybutton = document.getElementById("myBtn");
-        
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-        
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+    <button id="myBtn" aria-label="Back to top" title="Back to top">☝️</button>
 
     <div class="container fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" aria-label="Eleventh navbar example">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" aria-label="Main navigation">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./">Rhitvik Sinha</a>
 
@@ -104,6 +56,9 @@
                             <a class="nav-link" href="./photo">Photography</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="./randutils">randutils</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="./contact">Contact</a>
                         </li>
                     </ul>
@@ -118,11 +73,11 @@
                 <div class="timeline-2 left-2">
                     <div class="card">
                         <img src="./assets/img/nyu.jpg" class="card-img-top"
-                        alt="Responsive image">
+                        alt="New York University campus">
                         <div class="card-body p-4">
                             <h4 class="fw-bold mb-4">New York University</h4>
                             <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2022-2024</p>
-                            <p class="mb-0">Master of Science in Computer Science, Courant Institute of Mathematical 
+                            <p class="mb-0">Master of Science in Computer Science, Courant Institute of Mathematical
                                 Sciences
                             </p>
                         </div>
@@ -131,11 +86,11 @@
                 <div class="timeline-2 right-2">
                     <div class="card">
                         <img src="./assets/img/kgp.jpg" class="card-img-top"
-                        alt="Responsive image">
+                        alt="IIT Kharagpur campus">
                         <div class="card-body p-4">
                             <h4 class="fw-bold mb-4">Indian Institute of Technology, Kharagpur</h4>
                             <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2018-2022</p>
-                            <p class="mb-0">Bachelor of Technology (Hons.) in Electrical Engineering, Department of 
+                            <p class="mb-0">Bachelor of Technology (Hons.) in Electrical Engineering, Department of
                                 Electrical Engineering
                             </p>
                         </div>
@@ -144,7 +99,7 @@
                 <div class="timeline-2 left-2">
                     <div class="card">
                         <img src="./assets/img/dpsrkp.jpg" class="card-img-top"
-                        alt="Responsive image">
+                        alt="Delhi Public School R.K. Puram campus">
                         <div class="card-body p-4">
                             <h4 class="fw-bold mb-4">Delhi Public School, R.K. Puram, New Delhi</h4>
                             <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2016-2018</p>
@@ -155,7 +110,7 @@
                 <div class="timeline-2 right-2">
                     <div class="card">
                         <img src="./assets/img/dpsrpk.jpg" class="card-img-top"
-                        alt="Responsive image">
+                        alt="Delhi Public School Ruby Park campus">
                         <div class="card-body p-4">
                             <h4 class="fw-bold mb-4"> Delhi Public School, Ruby Park, Kolkata</h4>
                             <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2006-2016</p>
@@ -169,5 +124,6 @@
     </section>
 
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/common.js"></script>
 </body>
 </html>

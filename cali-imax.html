@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>California IMAX Map | Rhitvik Sinha</title>
+    <meta name="description" content="Interactive map of every IMAX theatre in California">
+    <meta name="author" content="Rhitvik Sinha">
+
+    <meta property="og:title" content="California IMAX Map | Rhitvik Sinha">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rhitviksinha.github.io/cali-imax">
+    <meta property="og:description" content="Interactive SVG map of every IMAX theatre in California.">
+    <meta property="og:image" content="./assets/img/rhitvik.JPG">
+
+    <link rel="icon" href="./assets/img/favicon1.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+    <link href="./assets/css/common.css" rel="stylesheet">
+    <link href="./assets/css/navbar.css" rel="stylesheet">
+
+    <style>
+        /* layout */
+        .imax-layout { display: flex; gap: 16px; align-items: flex-start; flex-wrap: wrap; }
+        .imax-map-container { flex: 1 1 500px; position: relative; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,.12); background: rgba(0,0,0,.7); }
+        .imax-sidebar { flex: 0 0 320px; min-width: 280px; }
+
+        /* hover card */
+        .imax-hover-card { position: absolute; width: 220px; background: rgba(0,0,0,.9); border: 1px solid rgba(255,255,255,.15); border-radius: 8px; padding: 12px 14px; pointer-events: none; z-index: 20; box-shadow: 0 8px 30px rgba(0,0,0,.5); }
+
+        /* venue rows */
+        .venue-row { background: rgba(0,0,0,.4); padding: 9px 12px; cursor: pointer; border-bottom: 1px solid rgba(255,255,255,.06); border-left: 2px solid transparent; transition: all .12s; }
+        .venue-row.active, .venue-row:hover { background: rgba(0,0,0,.6); }
+        .venue-row.selected { background: rgba(0,0,0,.6); }
+        .venue-row-name { font-size: 13px; font-weight: 600; color: rgba(255,255,255,.8); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .venue-row.active .venue-row-name, .venue-row:hover .venue-row-name { color: #fff; }
+
+        /* venue list */
+        .imax-venue-list { border-radius: 8px; border: 1px solid rgba(255,255,255,.1); overflow: hidden; overflow-y: auto; }
+
+        /* SVG pin states */
+        .pin-active-state, .pin-label { opacity: 0; pointer-events: none; }
+        .venue-pin.active .pin-active-state, .venue-pin.active .pin-label { opacity: 1; }
+        .venue-pin.active .pin-143-halo { opacity: 0; }
+        .venue-pin.active .pin-dot { opacity: 1 !important; }
+
+        @keyframes pin-pulse {
+            0%, 100% { opacity: 0.15; }
+            50% { opacity: 0.5; }
+        }
+        .venue-pin.active .pin-pulse-ring { animation: pin-pulse 2s infinite; }
+
+        /* responsive */
+        @media (max-width: 860px) {
+            .imax-sidebar { flex: 1 1 100%; }
+        }
+    </style>
+
+</head>
+
+<body class="font-monospace text-light">
+
+    <button id="myBtn" aria-label="Back to top" title="Back to top">☝️</button>
+
+    <div class="container fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" aria-label="Main navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./">Rhitvik Sinha</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample09">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./edu">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./photo">Photography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./randutils">randutils</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="cali-imax-app" class="container mt-content"></div>
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/cali-imax.js"></script>
+</body>
+</html>

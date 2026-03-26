@@ -10,7 +10,7 @@
 
     <meta property="og:title" content="Projects & Experience | Rhitvik Sinha">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rhitviksinha.github.io/">
+    <meta property="og:url" content="https://rhitviksinha.github.io/work">
     <meta property="og:description" content="Rhitvik Sinha's Personal Web Page.">
     <meta property="og:image" content="./assets/img/rhitvik.JPG">
 
@@ -18,35 +18,10 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+    <link href="./assets/css/common.css" rel="stylesheet">
     <link href="./assets/css/navbar.css" rel="stylesheet">
 
     <style>
-        body {
-            background-image: url('./assets/img/nyc-winter.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;  
-            background-size: cover;
-            background-color: rgba(0,0,0,0.75);
-            background-blend-mode: darken;
-        }
-        #myBtn {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 30px;
-            z-index: 99;
-            font-size: 30px;
-            border: 2px solid white;
-            outline: none;
-            background-color: rgba(255,255,255,0.2);
-            color: white;
-            cursor: pointer;
-            padding: 11px 21px 13px 19px;
-            border-radius: 50%;
-        }
-        #myBtn:hover {
-            background-color: rgba(255,255,255,0.5);
-        }
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -75,53 +50,16 @@
             vertical-align: -.125em;
             fill: currentColor;
         }
-        /* .nav-scroller {
-            position: relative;
-            z-index: 2;
-            height: 2.75rem;
-            overflow-y: hidden;
-        }
-        .nav-scroller .nav {
-            display: flex;
-            flex-wrap: nowrap;
-            padding-bottom: 1rem;
-            margin-top: -1px;
-            overflow-x: auto;
-            text-align: center;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
-        } */
     </style>
 
-    
+
 </head>
 <body class="font-monospace text-light">
 
-    <button onclick="topFunction()" id="myBtn" title="Back to top">☝️</button>
-    <script>
-        //Get the button
-        var mybutton = document.getElementById("myBtn");
-        
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-        
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+    <button id="myBtn" aria-label="Back to top" title="Back to top">☝️</button>
 
     <div class="container fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" aria-label="Eleventh navbar example">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" aria-label="Main navigation">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./">Rhitvik Sinha</a>
 
@@ -147,6 +85,9 @@
                             <a class="nav-link" href="./photo">Photography</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="./randutils">randutils</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="./contact">Contact</a>
                         </li>
                     </ul>
@@ -162,7 +103,7 @@
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">Projects, Internships & Experience(s)</h1>
         <p class="lead">
-            Feel free to contact me with questions that you have about any of the following listed projects / experiences. 
+            Feel free to contact me with questions that you have about any of the following listed projects / experiences.
             These are also listed in a more structured format in my Resume.
         </p>
         <p>
@@ -181,7 +122,7 @@
                 <div class="col">
                     <div class="card text-bg-light">
                         <div class="card-header">Graduate Course Project</div>
-                        <img src="./assets/img/mixedres.png" width="100%" height="200">
+                        <img src="./assets/img/mixedres.png" class="card-img-fixed" alt="Mixed resolution tokenization visualization">
                         <div class="card-body">
                             <h5 class="card-title">Image Encoding Schemes for Vision Transformers</h5>
                             <h6 class="card-title text-muted">CSCI-GA 3033 Special Topics: Large Language \& Vision Models (NYU)</h6>
@@ -204,7 +145,7 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="./assets/pdf/mixedres.pdf">Paper</a>
                                     </button>
                                 </div>
@@ -217,7 +158,7 @@
                 <div class="col">
                     <div class="card text-bg-light">
                         <div class="card-header">Graduate Course Project</div>
-                        <img src="./assets/img/adaptive_sphereformer.png" width="100%" height="200">
+                        <img src="./assets/img/adaptive_sphereformer.png" class="card-img-fixed" alt="Adaptive SphereFormer architecture">
                         <div class="card-body">
                             <h5 class="card-title">Adaptive SphereFormer: Dynamic Radial Windows for Better Sparse Learning</h5>
                             <h6 class="card-title text-muted">CSCI-GA 2271: Computer Vision (NYU)</h6>
@@ -240,7 +181,7 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="./assets/pdf/adaptive_sphereformer.pdf">Paper</a>
                                     </button>
                                 </div>
@@ -253,7 +194,7 @@
                 <div class="col">
                     <div class="card text-bg-light">
                         <div class="card-header">Teaching</div>
-                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/uqwC41RDPyg"></iframe>
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/uqwC41RDPyg" title="Teaching demo video"></iframe>
                         <!-- https://www.youtube.com/watch?v=uqwC41RDPyg -->
                         <div class="card-body">
                             <h5 class="card-title">Graduate Employee Adjunct</h5>
@@ -277,11 +218,11 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="https://www.instagram.com/p/CyWPhLhRktk/">Ted Lasso</a>
                                     </button>
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="https://www.instagram.com/p/CvNGZz6A6bP/">Oppenheimer</a>
                                     </button>
                                 </div>
@@ -294,7 +235,7 @@
                 <div class="col">
                     <div class="card text-bg-light">
                         <div class="card-header">Internship</div>
-                        <img src="./assets/img/cirrus.png" width="100%" height="200">
+                        <img src="./assets/img/cirrus.png" class="card-img-fixed" alt="Cirrus360 project">
                         <div class="card-body">
                             <h5 class="card-title">Systems and Applications Engineer</h5>
                             <h6 class="card-title text-muted">Cirrus360 Corp.</h6>
@@ -317,7 +258,7 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="https://cirrus3sixty.com/">Company Website</a>
                                     </button>
                                 </div>
@@ -330,7 +271,7 @@
                 <div class="col">
                     <div class="card text-bg-light">
                         <div class="card-header">Graduate Course Project</div>
-                        <img src="./assets/img/diffusion.png" width="100%" height="200">
+                        <img src="./assets/img/diffusion.png" class="card-img-fixed" alt="Diffusion model denoising results">
                         <div class="card-body">
                             <h5 class="card-title">Optimizing Diffusion Models for Image De-Noising</h5>
                             <h6 class="card-title text-muted">CSCI-GA 2565: Machine Learning (NYU)</h6>
@@ -357,7 +298,7 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="./assets/pdf/diffusion.pdf">Paper</a>
                                     </button>
                                 </div>
@@ -370,7 +311,7 @@
                 <div class="col">
                     <div class="card text-bg-light">
                         <div class="card-header">Graduate Course Project</div>
-                        <img src="./assets/img/soccertwos.png" width="100%" height="200">
+                        <img src="./assets/img/soccertwos.png" class="card-img-fixed" alt="SoccerTwos Unity environment">
                         <div class="card-body">
                             <h5 class="card-title">Multi-Agent RL with Unity (SoccerTwos)</h5>
                             <h6 class="card-title text-muted">DS-GA 3001: Special Topics: Reinforcement Learning (NYU)</h6>
@@ -394,7 +335,7 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="./assets/img/1M_vs_70M.MOV">1M Ep vs 70M Ep Demo</a>
                                     </button>
                                 </div>
@@ -407,7 +348,7 @@
                 <div class="col">
                     <div class="card text-bg-light">
                         <div class="card-header">Bachelor's Project</div>
-                        <img src="https://agupubs.onlinelibrary.wiley.com/cms/asset/d5654207-0d55-4143-91fd-1a8e716b73e7/jame21058-fig-0001-m.png" width="100%" height="200">
+                        <img src="https://agupubs.onlinelibrary.wiley.com/cms/asset/d5654207-0d55-4143-91fd-1a8e716b73e7/jame21058-fig-0001-m.png" class="card-img-fixed" alt="Weather forecasting model architecture">
                         <div class="card-body">
                             <h5 class="card-title">Forecasting of Extreme-Causing Weather Patterns Using Deep Learning</h5>
                             <h6 class="card-title text-muted">Centre for Excellence in Artificial Intelligence (CAI), IIT-KGP</h6>
@@ -430,13 +371,13 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                             href="https://docs.google.com/presentation/d/1QR7NRuaf9YTWmeu0vdQPOJ7WcK4M9pvXqiH5cSUhWLk/edit?usp=sharing">
                                             Slides
                                         </a>
                                     </button>
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                             href="./assets/pdf/CapsNet Project.pdf">Certificate</a>
                                     </button>
                                 </div>
@@ -449,7 +390,7 @@
                 <div class="col">
                     <div class="card text-bg-light">
                         <div class="card-header">Internship</div>
-                        <img src="./assets/img/kabuni-project.png" width="100%" height="200">
+                        <img src="./assets/img/kabuni-project.png" class="card-img-fixed" alt="Human pose estimation visualization">
                         <div class="card-body">
                             <h5 class="card-title">Human Pose Estimation Intern</h5>
                             <h6 class="card-title text-muted">Kabuni Sports</h6>
@@ -474,11 +415,11 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="./assets/pdf/Kabuni_Internship acceptance.pdf">Certificate</a>
                                     </button>
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="https://kabuni.com/">Company Website</a>
                                     </button>
                                 </div>
@@ -491,7 +432,7 @@
                 <div class="col">
                     <div class="card text-bg-light">
                         <div class="card-header">Internship</div>
-                        <img src="./assets/img/meity.jpg" width="100%" height="200">
+                        <img src="./assets/img/meity.jpg" class="card-img-fixed" alt="Ministry of Electronics and IT logo">
                         <div class="card-body">
                             <h5 class="card-title">Transformational AI Intern</h5>
                             <h6 class="card-title text-muted">Ministry of Electronics and Information Technology, Government of India</h6>
@@ -507,11 +448,11 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="./assets/pdf/cv.pdf">Certificate</a>
                                     </button>
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="https://www.meity.gov.in/digital-india-internship-scheme-2021-2nd-cycle">DII Webpage</a>
                                     </button>
                                 </div>
@@ -524,7 +465,7 @@
                 <div class="col">
                     <div class="card text-bg-light">
                         <div class="card-header">Graduate Course Project</div>
-                        <img src="https://moboehle.github.io/CoDA-Nets/media/goldfinch.gif" width="100%" height="200">
+                        <img src="https://moboehle.github.io/CoDA-Nets/media/goldfinch.gif" class="card-img-fixed" alt="CoDA-Nets interpretable classification">
                         <div class="card-body">
                             <h5 class="card-title">Interpretable Convolutional Neural Nets</h5>
                             <h6 class="card-title text-muted">CS60021: Scalable Data Mining (IIT-KGP)</h6>
@@ -537,7 +478,7 @@
                                         For the class CS60021, Scalable Data Mining, taken in Fall 2021 at IIT Kharagpur.
                                     </li>
                                     <li>
-                                        Implement "Convolutional Dynamic Alignment Networks for Interpretable Classifications" 
+                                        Implement "Convolutional Dynamic Alignment Networks for Interpretable Classifications"
                                         (2021, Böhle et al.) using PyTorch as Deep Learning framework of choice.
                                     </li>
                                 </ul>
@@ -545,17 +486,17 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="https://docs.google.com/presentation/d/1WmGWEKWm_RhFeE4CXrv9-3ZpCwiL9AF7u4fRFhHVzn4/edit?usp=sharing/">
                                            Slides
                                         </a>
                                     </button>
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="./assets/pdf/SDM Term Project Certificate.pdf">Certificate</a>
                                     </button>
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="https://moboehle.github.io/CoDA-Nets/">Author's Website</a>
                                     </button>
                                 </div>
@@ -568,7 +509,7 @@
                 <div class="col">
                     <div class="card text-bg-light">
                         <div class="card-header">Self Project</div>
-                        <img src="./assets/img/numpynet.JPG" width="100%" height="200">
+                        <img src="./assets/img/numpynet.JPG" class="card-img-fixed" alt="NumpyNet neural network diagram">
                         <div class="card-body">
                             <h5 class="card-title">NumpyNet</h5>
                             <h6 class="card-title text-muted">Neural Net using nothing but NumPy</h6>
@@ -582,7 +523,7 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="https://rhitviksinha.github.io/NumpyNET/">Webpage</a>
                                     </button>
                                 </div>
@@ -595,13 +536,13 @@
                 <div class="col">
                     <div class="card text-bg-light">
                         <div class="card-header">Graduate Course Project</div>
-                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/elTwUVg_E1M"></iframe>
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/elTwUVg_E1M" title="SAT-based low power state assignment demo"></iframe>
                         <div class="card-body">
                             <h5 class="card-title">SAT-based techniques in Low Power State Assignment</h5>
                             <h6 class="card-title text-muted">AI61005: Artificial Intelligence Foundations and Applications (IIT-KGP)</h6>
                             <p class="card-text">
                                 <ul>
-                                    <li>This project is done under the guidance of Professor Partha Pratim Chakrabarti and 
+                                    <li>This project is done under the guidance of Professor Partha Pratim Chakrabarti and
                                         Professor Arijit Mondal of IIT Kharagpur.
                                     </li>
                                     <li>Usage of AI techniques in your departmental domain (Electrical Engineering).</li>
@@ -611,7 +552,7 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="https://docs.google.com/presentation/d/1fXCrMyw8hTjN9R3zB2SElm2IrTP_ntYAoabRzHDJqng/edit?usp=sharing/">
                                             Slides
                                         </a>
@@ -626,7 +567,7 @@
                 <div class="col">
                     <div class="card text-bg-light">
                         <div class="card-header">Undergraduate Course Project</div>
-                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/k5u282V13-k"></iframe>
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/k5u282V13-k" title="Boolean Algebra Solver demo"></iframe>
                         <div class="card-body">
                             <h5 class="card-title">Boolean Algebra Solver</h5>
                             <h6 class="card-title text-muted">EC31003: Digital Electronic Circuits (IIT-KGP)</h6>
@@ -639,8 +580,8 @@
                                         For the class EC31003, Digital Electronic Circuits, taken in Fall 2020, at IIT Kharagpur.
                                     </li>
                                     <li>
-                                        Design and presented the software "Boolean Algebra Solver" that solves many modern day 
-                                        Boolean Algebra problems like K-Map, Quine-McCluskey Algorithm, Hazard Detection and 
+                                        Design and presented the software "Boolean Algebra Solver" that solves many modern day
+                                        Boolean Algebra problems like K-Map, Quine-McCluskey Algorithm, Hazard Detection and
                                         Removal, Hamming Code Generation, etc.
                                     </li>
                                     <li>
@@ -651,13 +592,13 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="https://drive.google.com/file/d/1MlwUrSS6oUZ-F2PMRJVIWFhQZM9XJ3K1/view?usp=sharing">
                                             Software
                                         </a>
                                     </button>
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="https://github.com/gaumo62/BooleanAlgebraSolver">GitHub</a>
                                     </button>
                                 </div>
@@ -670,7 +611,7 @@
                 <div class="col">
                     <div class="card text-bg-light">
                         <div class="card-header">Internship</div>
-                        <img src="./assets/img/ottonomy.png" width="100%" height="200">
+                        <img src="./assets/img/ottonomy.png" class="card-img-fixed" alt="Ottonomy autonomous delivery rover">
                         <div class="card-body">
                             <h5 class="card-title">Autonomous Robotics & AI Intern</h5>
                             <h6 class="card-title text-muted">Ottonomy.IO</h6>
@@ -688,11 +629,11 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="./assets/pdf/Ottonomy Internship.pdf">Certificate</a>
                                     </button>
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="https://ottonomy.io/">Company Website</a>
                                     </button>
                                 </div>
@@ -705,7 +646,7 @@
                 <div class="col">
                     <div class="card text-bg-light">
                         <div class="card-header">Self Project</div>
-                        <img src="https://raw.githubusercontent.com/rhitviksinha/Image-Denoising-using-AutoEncoders/main/image/architecture.JPG" width="100%" height="200">
+                        <img src="https://raw.githubusercontent.com/rhitviksinha/Image-Denoising-using-AutoEncoders/main/image/architecture.JPG" class="card-img-fixed" alt="Autoencoder architecture diagram">
                         <div class="card-body">
                             <h5 class="card-title">Auto Encoders</h5>
                             <h6 class="card-title text-muted">Practical Applications of Auto Encoders</h6>
@@ -713,11 +654,11 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="https://github.com/rhitviksinha/Image-Super-Resolution-using-AutoEncoders/">Super-Resolution</a>
                                     </button>
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="https://github.com/rhitviksinha/Image-Denoising-using-AutoEncoders/">De-Noising</a>
                                     </button>
                                 </div>
@@ -730,14 +671,14 @@
                 <div class="col">
                     <div class="card text-bg-light">
                         <div class="card-header">Hackathon</div>
-                        <img src="./assets/img/MS pitch.jpg" width="100%" height="200">
+                        <img src="./assets/img/MS pitch.jpg" class="card-img-fixed" alt="Microsoft hackathon presentation">
                         <div class="card-body">
                             <h5 class="card-title">parkMyCar</h5>
                             <h6 class="card-title text-muted">Microsoft presents Innovation Hackathon, an initiative of IncubateIND</h6>
                             <p class="card-text">
                                 <ul>
                                     <li>
-                                        Developed in 24 hours at Microsoft presents Innovation Hackathon, an initiative of IncubateIND, 
+                                        Developed in 24 hours at Microsoft presents Innovation Hackathon, an initiative of IncubateIND,
                                         powered by Microsoft Azure.
                                     </li>
                                     <li>
@@ -754,11 +695,11 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="https://ms.ayushgoyal.dev/">Landing Page</a>
                                     </button>
                                     <button type="button" class="btn btn-sm btn-outline-primary">
-                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer" 
+                                        <a class="stretched-link text-decoration-none" target="_blank" rel="noopener noreferrer"
                                            href="https://github.com/ayush6624/ms-hackathon">GitHub</a>
                                     </button>
                                 </div>
@@ -794,7 +735,8 @@
 </main>
 
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/common.js"></script>
 
-      
+
   </body>
 </html>

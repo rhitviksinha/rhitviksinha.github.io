@@ -1,0 +1,115 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>randutils | Rhitvik Sinha</title>
+    <meta name="description" content="Random tools and utilities by Rhitvik Sinha">
+    <meta name="author" content="Rhitvik Sinha">
+
+    <meta property="og:title" content="randutils | Rhitvik Sinha">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rhitviksinha.github.io/randutils">
+    <meta property="og:description" content="A collection of random tools and utilities.">
+    <meta property="og:image" content="./assets/img/rhitvik.JPG">
+
+    <link rel="icon" href="./assets/img/favicon1.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+    <link href="./assets/css/common.css" rel="stylesheet">
+    <link href="./assets/css/navbar.css" rel="stylesheet">
+
+</head>
+
+<body class="font-monospace text-light">
+
+    <button id="myBtn" aria-label="Back to top" title="Back to top">☝️</button>
+
+    <div class="container fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" aria-label="Main navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./">Rhitvik Sinha</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample09">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./edu">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./photo">Photography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./randutils">randutils</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container mt-content">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <h1 class="fw-bold mb-4">randutils</h1>
+                <p>
+                    A collection of random, inconsequential tools and utilities I've built.
+                    Nothing serious &mdash; just things that scratched an itch or seemed fun to make.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-half-cm">
+            <div class="col-lg-9">
+
+                <div class="card text-bg-light mb-4">
+                    <div class="card-body p-4">
+                        <h5 class="card-title fw-bold mb-2">California IMAX Map</h5>
+                        <p class="card-text">
+                            When Interstellar was re-released, I wanted to find where IMAX 70mm theatres were in California, which took
+                            some of searching. Then Project Hail Mary came out and I found myself doing the same thing again. Amaze. Amaze. Amaze.<br><br>
+                            So now, I have an interactive SVG map of every IMAX theatre in California. IMAX data from
+                            <a href="https://imax.fandom.com/wiki/List_of_IMAX_venues" target="_blank">IMAX Fandom Wiki</a>. California
+                            SVG map sourced from <a href="https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json" target="_blank">PublicaMundi MappingAPI</a>.
+                            <br><br>Filter by projector type (GT Laser, CoLa, Single Laser), aspect ratio,
+                            and theatre chain. Zoom into the Bay Area, Greater LA, or San Diego.
+                            Click or hover venues for screen dimensions and specs.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-primary">
+                                    <a class="stretched-link text-decoration-none" href="./cali-imax">Explore</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+</body>
+</html>
