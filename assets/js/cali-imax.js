@@ -355,7 +355,7 @@
       (state.zoom.key === "full" ? "ALL VENUES" : state.zoom.label.toUpperCase()) + '</span>';
     h += '<span style="font-size:11px;color:rgba(255,255,255,.3);">' + sorted.length + ' venue' + (sorted.length !== 1 ? 's' : '') + '</span></div>';
     // list
-    h += '<div class="imax-venue-list" style="max-height:' + (state.sel ? 360 : 520) + 'px;">';
+    h += '<div class="imax-venue-list">';
     sorted.forEach(function (v) { h += buildVenueRow(v); });
     h += '</div></div>';
     return h;
